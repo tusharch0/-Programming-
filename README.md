@@ -1,2 +1,2 @@
 # -Programming-
-just for daily practice
+Just for daily practice
