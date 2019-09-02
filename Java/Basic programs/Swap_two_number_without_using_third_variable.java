@@ -1,10 +1,10 @@
 import java.util.*;
-class SwapTwoNumbers
+class Swap_two_number_without_using_third_variable
 {
 	public static void main(String []s)
 	{
 		int a,b;
-		Scanner sc=new Scanner(System.in);
+		Scanner sc =new Scanner(System.in);
 
 		System.out.print("Enter value of a: ");
 		a=sc.nextInt();
