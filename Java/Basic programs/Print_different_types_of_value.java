@@ -1,4 +1,5 @@
-class main{
+class Print_different_types_of_value
+{
     public static void main(String args[])
     {
         int num;

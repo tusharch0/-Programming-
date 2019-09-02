@@ -1,5 +1,6 @@
 import java.util.*;
-class main {
+class Read_and_print_an_integer
+{
     public static void main(String args[])
     {
         int a;
