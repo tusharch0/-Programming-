@@ -1,4 +1,4 @@
-public class PrintAlphabets 
+public class Print_uppercase_and_lower_case_alphabets
 {
 	public static void main(String args[])
 	{
