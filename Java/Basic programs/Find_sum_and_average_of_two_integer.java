@@ -1,6 +1,7 @@
 import java.util.*;
-class main{
-    public static void main(String args[])
+class Find_sum_and_average_of_two_integer
+{
+    public static void main (String args[])
     {
         int a,b,sum;
         float avg;
