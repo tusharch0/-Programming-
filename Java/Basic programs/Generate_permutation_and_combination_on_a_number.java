@@ -17,7 +17,7 @@ public class Generate_permutation_and_combination_on_a_number
         System.out.print ("Enter n: ");
         n=s.nextInt() ;
         System.out.print ("Enter r: ");
-        r=s.nextInt() ;
+        r=s.nextInt() ; 
         System.out.print("Combination is "+(fact (n)/(fact (r))));
         System.out.print("Permutation is "+(fact (n)/(fact (n-r))));
     }
