@@ -1,5 +1,5 @@
 import java.util.*;
-public class j5 
+public class Find_square_cube_and_square_root_of_a_number
 {
 	public static void main(String args[]){
 		Scanner sc=new Scanner(System.in);
