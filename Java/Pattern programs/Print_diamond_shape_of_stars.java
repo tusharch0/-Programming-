@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class main
+public class Print_diamond_shape_of_stars
 {
 	public static void main(String[] args) 
     {

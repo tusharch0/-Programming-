@@ -1,4 +1,4 @@
-public class main
+public class Print_a_rectangle_using_stars
 {
 	public static void main(String[] args) 
 	{

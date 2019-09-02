@@ -1,4 +1,4 @@
-public class main
+public class Print_christmas_tree
 {
 	public static final int SEGMENTS = 4;
 	public static final int HEIGHT = 4;
