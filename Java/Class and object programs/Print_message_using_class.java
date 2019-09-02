@@ -7,7 +7,7 @@ class Show
     }
 }
  
-public class main
+public class Print_message_using_class
 {
     public static void main(String []s)
     {
