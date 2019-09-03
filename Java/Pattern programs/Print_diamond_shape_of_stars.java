@@ -2,10 +2,12 @@ import java.util.Scanner;
 
 public class Print_diamond_shape_of_stars
 {
+	private static Scanner s;
+
 	public static void main(String[] args) 
     {
 		int n, i, j, space = 1;
-		Scanner s=new Scanner(System.in);
+		s = new Scanner(System.in);
 		System.out.println("Enter number of rows: ");
 		n=s.nextInt();
 

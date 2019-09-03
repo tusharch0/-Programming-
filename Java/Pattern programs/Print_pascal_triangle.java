@@ -2,12 +2,14 @@ import java.util.Scanner;
 
 public class Print_pascal_triangle
 {
+	private static Scanner s;
+
 	public static void main(String[] args) 
 	{
 		
 		int lib,p,q,r,x;
 
-		Scanner s=new Scanner(System.in);
+		s = new Scanner(System.in);
 
 		System.out.print("Enter the rows : ");
 		r=s.nextInt();
