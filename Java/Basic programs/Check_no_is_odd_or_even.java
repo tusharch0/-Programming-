@@ -1,9 +1,11 @@
 import java.util.*;
 public class Check_no_is_odd_or_even
 {
+	private static Scanner s;
+
 	public static void main(String args[])
 	{
-		Scanner s=new Scanner(System.in);
+		s = new Scanner(System.in);
 		int num;
 
 		System.out.print("Enter an integer number: ");
