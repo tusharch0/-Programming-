@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Count_positive_negative_zero_from_an_array
 {
     private static Scanner s;
