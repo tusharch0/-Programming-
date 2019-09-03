@@ -1,6 +1,7 @@
 import java .util.*;
 public class Generate_permutation_and_combination_on_a_number
 {
+    private static Scanner s;
     public static int fact(int num)
     {
         int fact =1,i;
@@ -13,7 +14,7 @@ public class Generate_permutation_and_combination_on_a_number
     public static void main(String args [])
     {
         int n,r;
-        Scanner s=new Scanner (System.in);
+        s = new Scanner (System.in);
         System.out.print ("Enter n: ");
         n=s.nextInt() ;
         System.out.print ("Enter r: ");

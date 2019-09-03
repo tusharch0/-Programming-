@@ -1,8 +1,10 @@
 import java.util.*;
 public class Find_square_cube_and_square_root_of_a_number
 {
+	private static Scanner s;
+
 	public static void main(String args[]){
-		Scanner s=new Scanner(System.in);
+		s = new Scanner(System.in);
 		int num;
 
 		System.out.print("Enter a number: ");

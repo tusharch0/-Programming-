@@ -1,10 +1,12 @@
 import java.util.Scanner;
 public class Print_all_armstrong_no_between_given_range
 {
+    private static Scanner s;
+
     public static void main(String args[])
     {
         int n, n1, n2, i, rem, temp, count=0;
-        Scanner s = new Scanner(System.in);
+        s = new Scanner(System.in);
         
         System.out.print("Enter Starting Number :  ");
         n1 = s.nextInt();
