@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Print_triangle_of_numbers
+public class Print_triangle_of_numbers_1
 {
     public static void main(String[] args) 
     {
