@@ -4,7 +4,7 @@ int main()
 {
 	int count,n;
 
-	printf("Enter the value of");
+	printf("Enter the value of N ");
 	scanf("%d",&n);
 
 	count =1;
