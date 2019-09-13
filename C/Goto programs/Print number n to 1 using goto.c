@@ -1,18 +1,19 @@
 #include <stdio.h>
-
 int main()
 {
+
 	int count,n;
 
-	printf("Enter the value of N ");
+	printf("Enter value of n: ");
 	scanf("%d",&n);
 
-	count =1;
+	count =n;
+
 	start: 
 	printf("%d ",count);
-	count++;
+	count--;
 
-	if(count<=n)
+	if(count>=1)
 		goto start;
 
 	return 0;
