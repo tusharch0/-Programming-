@@ -2,9 +2,11 @@ import java.util.Scanner;
 
 public class Check_given_no_is_pronic_or_not 
 {
-	public static void main(String args[])
+	private static Scanner sc;
+
+    public static void main(String args[])
     {
-        Scanner sc = new Scanner(System.in);
+        sc = new Scanner(System.in);
          
         System.out.print("Enter a number : ");
         int n = sc.nextInt();
