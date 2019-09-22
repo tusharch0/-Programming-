@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class find_the_smallest_element_in_am_array
+public class find_the_smallest_element_in_an_array
 {
     private static Scanner sc;
 
