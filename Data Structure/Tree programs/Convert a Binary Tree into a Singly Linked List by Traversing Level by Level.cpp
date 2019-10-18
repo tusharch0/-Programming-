@@ -2,7 +2,7 @@
 using namespace std;
 
 // tree node is defined
-class tree{    
+class tree{
 	public:
 		int data;
 		tree *left;
@@ -25,7 +25,7 @@ sll* creatnode(int d){ //create node for single linked list
 void display(sll* head){
 	sll* current=head; // current node set to head
 
-	printf("displayig the converted list...\n");
+	printf("displaying the converted list...\n");
 	while(current!=NULL){ //traverse until current node isn't NULL
 	    if(current->next)
 		printf("%d->",current->data);
@@ -37,7 +37,7 @@ void display(sll* head){
 
 sll* flatten(tree* root)
 {
-	//Declare queue using STL 
+	//Declare queue using STL
 	sll* head=NULL,*tempL;
 	queue<tree*> q;
 	//enqueue the root
@@ -58,41 +58,41 @@ sll* flatten(tree* root)
 		    tempL->next=creatnode(temp->data);
 		    tempL=tempL->next;
 		}
-		
+
 		// do level order traversing
 		if(temp->left)//for left child
 			q.push(temp->left);
 		if(temp->right)//for right child
 			q.push(temp->right);
-		
+
 	}
-	
-	
+
+
 	return head;
 
 }
 
 tree* newnode(int data)  // creating new node for tree
-{ 
-	tree* node = (tree*)malloc(sizeof(tree)); 
-	node->data = data; 
-	node->left = NULL; 
-	node->right = NULL; 
+{
+	tree* node = (tree*)malloc(sizeof(tree));
+	node->data = data;
+	node->left = NULL;
+	node->right = NULL;
 
-	return(node); 
-} 
+	return(node);
+}
 
 
-int main() 
-{ 
-	//**same tree is builted as shown in example**
+int main()
+{
+	//**same tree is built as shown in example**
 	cout<<"same tree is built as shown in example\n";
-	tree *root=newnode(2); 
-	root->left= newnode(7); 
-	root->right= newnode(5); 
+	tree *root=newnode(2);
+	root->left= newnode(7);
+	root->right= newnode(5);
 	root->right->right=newnode(9);
 	root->right->right->left=newnode(4);
-	root->left->left=newnode(2); 
+	root->left->left=newnode(2);
 	root->left->right=newnode(6);
 	root->left->right->left=newnode(5);
 	root->left->right->right=newnode(11);
@@ -103,5 +103,5 @@ int main()
 	//displaying the list built from the tree
 	display(head);
 
-	return 0; 
-} 
+	return 0;
+}
