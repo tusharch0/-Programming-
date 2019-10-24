@@ -11,7 +11,7 @@ public class Convert_string_to_boolean
 
 		String str =s.next();
 
-		Boolean blnObj1 = new Boolean(str);
+		Boolean blnObj1 = new Boolean(str) ;
 		System.out.println("Boolean value is : " +blnObj1);
 	}  
 }
