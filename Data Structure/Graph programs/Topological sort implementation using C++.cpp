@@ -16,7 +16,6 @@ string topological_sort(list<int>* ls, int k)
         if (st.find(i) == st.end()) {
             s.push(i);
             st.insert(i);
-            //check all the non visited nodes
             while (!s.empty()) {
                 int p = s.top();
                 list<int>::iterator it;
