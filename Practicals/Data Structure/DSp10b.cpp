@@ -6,18 +6,12 @@ using namespace std;
 class Graph 
 { 
     int V;    
-   
     list<int> *adj; 
-  
-    
     void DFSUtil(int v, bool visited[]); 
+    
 public: 
     Graph(int V);   
-  
-   
     void addEdge(int v, int w); 
-  
-     
     void DFS(int v); 
 }; 
   
@@ -43,8 +37,7 @@ void Graph::DFSUtil(int v, bool visited[])
     for (i = adj[v].begin(); i != adj[v].end(); ++i) 
         if (!visited[*i]) 
             DFSUtil(*i, visited); 
-} 
-  
+}   
  
 void Graph::DFS(int v) 
 { 
@@ -54,8 +47,7 @@ void Graph::DFS(int v)
         visited[i] = false; 
   
     DFSUtil(v, visited); 
-} 
-  
+}  
  
 int main() 
 { 
