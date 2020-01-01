@@ -15,4 +15,4 @@ if (amt >0):
     print ("Discount : ",disc ) 
     print ("Net pay : ",amt-disc )
 else :
-    print("Invalid Amouunt")
+    print("Invalid Amount")
