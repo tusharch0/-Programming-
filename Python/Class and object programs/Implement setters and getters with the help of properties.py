@@ -39,7 +39,7 @@ class Employee:
         self.__city =value
 
     @property
-    def salary (self ,value ):
+    def salary (self):
         return self .__salary
 
     @salary.setter

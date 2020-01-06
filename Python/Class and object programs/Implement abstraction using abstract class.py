@@ -6,7 +6,7 @@ class Vehicle:
     def park(self,name ="" ):
         pass
     def stop(self ,name =""):
-        print(name ."is stopped")
+        print(name ,"is stopped")
 
 class Bike (Vehicle ):
     def acclerate(self,name =""):
@@ -18,7 +18,7 @@ class Car(Vehicle):
     def acclerate(self,name=""):
         print(name ,"is accelrating @ 90kmph")
     def park(self,name =""):
-        print (name ."is parked at four wheeler parking ")
+        print (name ,"is parked at four wheeler parking ")
 
 def main():
     print("Bike Object ")
