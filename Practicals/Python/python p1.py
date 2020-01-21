@@ -1,13 +1,24 @@
-i = int (input("Enter the first number :"))
-j = int (input("Enter the second number :"))
-k = int (input ("Enter the third number :"))
-if (i>j):
-    if (i>k):
-        print(i," is greatest ")
-    else:
-        print(k," is greatest ")
-else:   
-    if (k>j):
-        print (k," is greatest ")
-    else :
-        print(j," is greatest ")
+#assigning the value
+a=7 
+print (a)
+print('a')
+
+# 5=b  --> give error 
+print('a =',a)
+print('a ='+str(a))
+
+# for single value to muliple variable  
+p=q=r=9
+print(p)
+print(q)
+print(r)
+
+# for multiple values to multiple variable 
+x,y,z=1,3,6
+print(x)
+print(y)
+print(z)
+
+no=23
+# UID=18bcs6523  --> give error
+UID ='18BCS6523'
