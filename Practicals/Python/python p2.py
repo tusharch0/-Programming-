@@ -34,7 +34,7 @@ for i in range (9,2,-2):
 print()
 
 # Break statement 
-fruits =["apple ","banana","guava","grapes","oranges"]
+fruits =["apple ","banana","guava","oranges"]
 for i in fruits :
     if i=="guava":
         break
