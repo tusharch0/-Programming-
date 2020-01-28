@@ -12,6 +12,29 @@ else:
     print("Odd number ")
 print()
 
+# nested if-else
+a= int (input("Enter the first number :"))
+b= int (input("Enter the second number :"))
+c= int (input("Enter the third number :"))
+
+if (a>b and a>c):
+    print("A is greatest ")
+elif (b>a and b>c):
+    print("B is greatest ")
+elif (c>a and c>b):
+    print("C is greatest ")
+
+# print the table of the number enter by the user 
+a=int (input ("Enter the number "))
+for i in range (1,11,1):
+    print(a,"*",i," = ",a*i)
+
+# sum of natural number from 1 to 10
+sum=0
+for i in range (1,11,1):
+    sum = sum +i
+    print("Addition of ",i,"number is ",sum)
+    
 # While loop
 a=0
 while a<5:
