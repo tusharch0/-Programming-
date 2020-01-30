@@ -12,9 +12,9 @@ class Check :
             print (self.num,"is armstrong ")
         else :
             print (self.num,"is not armstrong")
-if ___name__=="__main__":
+if __name__=="__main__":
     num =153
-    check_Armstrong = check(num)
+    check_Armstrong = Check(num)
     check_Armstrong.isArmstrong()
     num =127
     check_Armstrong=Check(num)
