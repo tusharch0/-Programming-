@@ -1,3 +1,5 @@
+# writing python program in various modes and printing and assigning values assigned to the variables.
+
 #assigning the value
 a=7 
 print (a)
