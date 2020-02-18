@@ -1,3 +1,5 @@
+# Program demonstrate the use a functions and passing different type of arguments to functions 
+
 # Function in python 
 def sum(a,b):             # a,b are the perameters to sum function 
     result =a+b
