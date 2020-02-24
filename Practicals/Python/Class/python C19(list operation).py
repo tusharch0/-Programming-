@@ -47,4 +47,4 @@ for i in temp:
         pos=point
     point=point+1
 
-print("Mode is :",list[pos])                                                     
+print("Mode is :", list[pos])
