@@ -34,3 +34,23 @@ print(res)
 # C) Number of weeks in a month should be considered as 4 
 # Write a Python program to implement the above real world.
 
+emp = input("Enter the name of employee : ")
+hrs = int(input("Enter the no of hours he worked :"))
+payRate = int(input("Enter the pay rate :"))
+week = int(input("Enter the niumber of weeks :"))
+sal = 0
+sal = hrs*payRate*week
+yearSal = 0
+yearSal = sal*12
+tax = 0
+print("Monthly Salary of Employee is : ", sal)
+if (yearSal <= 250000):
+    tax = 0
+elif (yearSal <= 500000 and yearSal >=250000):
+    tax = (yearSal-250000)*0.05
+elif (yearSal >= 500000 and yearSal <= 1000000):
+    tax = 12500+(yearSal - 500000)*0.2
+else:
+    tax = 12500+100000+(yearSal-1000000)*0.3
+
+print("Tax is : ", tax)
