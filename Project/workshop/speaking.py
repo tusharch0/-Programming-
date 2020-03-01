@@ -1,16 +1,16 @@
 import speech_recognition as sr
 import pyttsx3
-import re  # split text
-import datetime  # current date and time
-import random  # for random function
+import re  
+import datetime  
+import random  
 import time
 import requests
 import json
 from pygame import mixer
-#import serial as sl
+import serial as sl
 
 engine = pyttsx3.init()
-#ser = sl.Serial('COM22', 9600)
+ser = sl.Serial('COM22', 9600)
 
 api_key = "fa862172403ad7caf125160be68be451"
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
@@ -67,12 +67,12 @@ def check_for_greeting(sentence, i):
 
     if sentence == "calculator":
         print("Tell me numbers: ")
-        #speak("Tell me numbers: ")
+        speak("Tell me numbers: ")
         a = int(input())
         b = int(input())
         print("Tell me what you want: ", "\r", "1: add", "\r",
               "2: subtract", "\r", "3: multiply", "\r", "4: divide")
-        #speak("Tell me what you want: ", "\r", "1: add", "\r", "2: subtract", "\r", "3: multiply", "\r", "4: divide")
+        speak("Tell me what you want: ", "\r", "1: add", "\r", "2: subtract", "\r", "3: multiply", "\r", "4: divide")
         j = input()
 
         if j == 1 or "add":
@@ -152,20 +152,20 @@ def check_for_greeting(sentence, i):
             if("on" in sentence):
                 print("Led first on")
                 speak("Led first on")
-                #ser.write('c'.encode())
+                ser.write('c'.encode())
             elif("off" in sentence):
                 print("Led first off")
                 speak("Led first off")
-                #ser.write('d'.encode())
+                ser.write('d'.encode())
         elif("second" in sentence or "two" in sentence):
             if("on" in sentence):
                 print("Led second on")
                 speak("Led second on")
-                #ser.write('e'.encode())
+                ser.write('e'.encode())
             elif("off" in sentence):
                 print("Led second off")
                 speak("Led second off")
-                #ser.write('f'.encode())
+                ser.write('f'.encode())
 
     if("weather" in sentence):
         r = sr.Recognizer()
@@ -206,7 +206,7 @@ while(1):
         try:
             print("Say Something")
             speak("Say Something")
-            #r.adjust_for_ambient_noise(source)
+            r.adjust_for_ambient_noise(source)
             audio = r.listen(source, timeout=1)
         except Exception as e:
             print("Error: ", e)
@@ -226,7 +226,7 @@ while(1):
                 try:
                     print("How can I help you sir")
                     speak("How can I help you sir")
-                    #r.adjust_for_ambient_noise(source)
+                    r.adjust_for_ambient_noise(source)
                     audio = r.listen(source, timeout=1)
                 except Exception as e:
                     print("Error: ", e)

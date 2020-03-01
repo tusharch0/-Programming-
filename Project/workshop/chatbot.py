@@ -3,13 +3,8 @@ import time  # for delay if you want
 import re  # split text
 import datetime  # current date and time
 import pyttsx3  # for text to speech conversion
-# pip install pyttsx3
 import speech_recognition as sr  # for speech to text conversion
-# pip install speech_recognition
 
-#q stands for question and a stands for answer like
-#ownerq = asking question about owner
-#ownera = answer about owner
 
 GREETING_KEYWORDS = ("hello", "hi", "greetings", "sup",
                      "what's up", "hey", "namaste")
@@ -35,14 +30,12 @@ dateq = ["date", "time"]
 
 #for speech function
 
-
 def speak(data):
     engine = pyttsx3.init()
     engine.say(data)
     engine.runAndWait()
 
 #for loop will check each and every line for better response
-
 
 def check_for_greeting(sentence):
     for i in range(0, 6):
