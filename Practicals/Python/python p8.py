@@ -10,3 +10,8 @@ print(str1)
 
 
 # Write a program combine lists that combines these lists into a dictionary.
+str = ["Tushar",'Abhi','Rahul']
+str1 = ['Khan','Choudhary','Kumar']
+names = zip(str,str1)
+for a,b in names :
+    print(a,b)
