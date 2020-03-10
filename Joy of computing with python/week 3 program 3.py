@@ -1,49 +1,41 @@
-# You all have seen how to write loops in python. Now is the time to implement what you have learned.
+# You are given a number A which contains only digits 0's and 1's. Your task is to make all digits same by just flipping one digit (i.e. 0 to 1 or 1 to 0 ) only. If it is possible to make all the  digits same by just flipping one digit then print 'YES' else print 'NO'.
 #
-# Given an array A of N numbers, you have to write a program which prints the sum of the elements of array A with the corresponding elements of the reverse of array A.
-# If array A has elements [1,2,3], then reverse of the array A will be [3,2,1] and the resultant array should be [4,4,4].
-
 # Input Format:
-
-# The first line of the input contains a number N representing the number of elements in array A.
-# The second line of the input contains N numbers separated by a space. (after the last elements, there is no space)
-
+#
+# The first line contains a number made up of 0's and 1's.
+#
 # Output Format:
-
-# Print the resultant array elements separated by a space. (no space after the last element)
-
+#
+# Print 'YES' or 'NO' accordingly without quotes.
+#
 # Example:
-
+#
 # Input:
-# 4
-# 2 5 3 1
-
+#
+# 101
+#
 # Output:
-# 3 8 8 3
-
-N = int(input())
-a = [int(x) for x in input().split()]
-revA = a[::-1]
-result = [None] * len(a)
-for i in range(len(a)):
-    result[i] = a[i] + revA[i]
-
-for i in range(len(a)):
-    print(result[i], end=" ")
+# YES
 
 
-# or
+A = input()
+ls = []
+li = str(A)
+for j in li:
+    ls.append(int(j))
+count_z = 0
+count_o = 0
+for k in ls:
+    if(k == 1):
+        count_o += 1
+    if(k == 0):
+        count_z += 1
 
-N = int(input())
-A = [int(i) for i in input().split(" ")]
-B = []
-for i in range(len(A)-1, -1, -1):
-    B.append(A[i])
-C = []
-for i in range(len(B)):
-    C.append(A[i]+B[i])
-for i in range(len(C)):
-    if(i == len(C)-1):
-        print(C[i])
+if((count_o == 1) or (count_z == 1)):
+    print("YES")
+
+else:
+    if((count_o == 0) or (count_z == 0)):
+        print("NO")
     else:
-        print(C[i], end=" ")
+        print("NO")
