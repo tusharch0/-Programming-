@@ -1,39 +1,43 @@
-# Given two numbers as input, print the larger number.
+# Given a list A of numbers, you have to print those numbers which are not multiples of 3.
 #
 # Input Format:
-# The first line of input contains two numbers separated by a space
+#
+# The first line contains the numbers of list A separated by a space.
 #
 # Output Format:
-# Print the larger number
+#
+# Print the numbers in a single line separated by a space which are not multiples of 3.
 #
 # Example:
 #
 # Input:
-# 2 3
+#
+# 1 2 3 4 5 6 5
 #
 # Output:
-# 3
 #
-# Sample Test Cases Input	Output
-# Test Case 1	2 3 3
-# Test Case 2	3 4 4
-# Test Case 3	4 5 5
-# Test Case 4	10 8 10
-# Test Case 5	100 10 100
-# Test Case 6	0 1 1
-# Test Case 7	10 9 10
-# Test Case 8	9 6 9
+# 1 2 4 5 5
 
-x, y = map(int, input().split())
-print(x if x > y else y)
+
+a = [int(x) for x in input().split()]
+for i in range(len(a)):
+    if ((a[i] % 3) != 0):
+        print(a[i], end=" ")
+
 
 # or
 
-x, y = input().split(" ")
-x = int(x)
-y = int(y)
 
-if(x > y):
-    print(x)
-else:
-    print(y)
+a = [int(x) for x in input().split()]
+
+b = []
+
+for i in a:
+    if(i % 3 != 0):
+        b.append(i)
+
+for i in range(len(b)):
+    if(i == len(b)-1):
+        print(b[i], end="")
+    else:
+        print(b[i], end=" ")
