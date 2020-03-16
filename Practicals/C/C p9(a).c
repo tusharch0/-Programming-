@@ -1,0 +1,1 @@
+//Define a structure type, personal, that would contain person name, date of joining and salary. Using this structure, write a program to read this information for one person from the key board and print the same on the screen.
