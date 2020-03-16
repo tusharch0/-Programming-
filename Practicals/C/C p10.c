@@ -1,0 +1,1 @@
+//WAP to store a character string in block of memory space created by malloc and then modify the same to store a large string.
