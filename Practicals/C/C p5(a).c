@@ -1,0 +1,1 @@
+//Write a program to search an element from an array.
