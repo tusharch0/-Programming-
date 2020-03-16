@@ -1,0 +1,1 @@
+//WAP to check whether entered year is leap or not.  Note: for century year check number by 400 instead 4.
