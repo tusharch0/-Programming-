@@ -1,0 +1,1 @@
+//WAP to print grade of a student based on marks of 5 subjects entered by user.
