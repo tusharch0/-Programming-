@@ -1,0 +1,1 @@
+//WAP to read an array of elements and print the same in the reverse order along with their addresses
