@@ -1,0 +1,1 @@
+//The normal speed of a vehicle is less than 65kmph. If entered speed is less than 65kmph print within speed limit otherwise over speed limit.
