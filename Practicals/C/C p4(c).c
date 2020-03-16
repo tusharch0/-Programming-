@@ -1,0 +1,1 @@
+//Write a program to print series of arm-strong numbers from m to n. m, n will be inputted by use. Armstrong are those numbers where number= sum of cubes of digits.
