@@ -1,0 +1,1 @@
+//Write a program to illustrate various strings inbuilt functions (strrev, strcmp, strlen, strcpy, strcat…)
