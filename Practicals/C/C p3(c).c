@@ -1,0 +1,5 @@
+/*Write a menu driven program that allow the user to perform any one of the following operation based on the input given by user 
+a. check number is even or odd 
+b. check number is positive or negative 
+c. printing square of the number 
+d. printing square root of the number  */
