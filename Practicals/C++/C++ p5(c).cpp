@@ -1,0 +1,1 @@
+//WAP to resolve the problem mentioned in question 10 using virtual base class and scope resolution operator.
