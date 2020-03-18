@@ -1,0 +1,1 @@
+//WAP to find area of rectangle using parametrized constructor.
