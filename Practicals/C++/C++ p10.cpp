@@ -1,0 +1,1 @@
+//Write a program to store the information of about 5 students in a file and read the contents and print them on screen.
