@@ -1,0 +1,1 @@
+//WAP to illustrate the concept of diamond ambiguity in multiple Inheritance.
