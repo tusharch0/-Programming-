@@ -3,7 +3,7 @@
 list = []
 len = int(input("Enter the no of element : "))
 for i in range(len):
-    num = int(input("list[{0}]: ".format(i)))
+    num = int(input("List[{0}]: ".format(i)))
     list.append(num)
 
 z = list[0]
