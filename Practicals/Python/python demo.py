@@ -13,7 +13,6 @@ elif (c > a and c > b):
 
 # write a program to find the gcd of three numbers.
 
-
 def GCD(a, b):
     gcd = 1
     if(a > b):
